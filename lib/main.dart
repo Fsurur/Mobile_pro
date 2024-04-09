@@ -12,10 +12,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Latihan',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 24, 209, 184)),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Aplikasi Fauzan'),
+      home: const MyHomePage(title: 'Aplikasi Latihan Fluterr Fauzan'),
     );
   }
 }
@@ -45,12 +45,13 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Center(
+      body: Container(
+        color: Colors.green,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'Berisi Contoh Projek yang sangat sederhana',
+              'Selamat Datang Di Projek Saya',
             ),
             Text(
               '$_counter',
